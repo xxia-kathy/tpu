@@ -118,20 +118,20 @@ flags.DEFINE_integer(
           ' should be adjusted according to the --train_batch_size flag.'))
 
 flags.DEFINE_integer(
-    'input_image_size', default=None,
+    'input_image_size', default=256,
     help=('Input image size: it depends on specific model name.'))
 
 flags.DEFINE_integer(
-    'train_batch_size', default=2048, help='Batch size for training.')
+    'train_batch_size', default=256, help='Batch size for training.')
 
 flags.DEFINE_integer(
-    'eval_batch_size', default=64, help='Batch size for evaluation.')
+    'eval_batch_size', default=8, help='Batch size for evaluation.')
 
 flags.DEFINE_integer(
-    'num_train_images', default=1281167, help='Size of training data set.')
+    'num_train_images', default=11131, help='Size of training data set.')
 
 flags.DEFINE_integer(
-    'num_eval_images', default=50000, help='Size of evaluation data set.')
+    'num_eval_images', default=1391, help='Size of evaluation data set.')
 
 flags.DEFINE_integer(
     'steps_per_eval', default=6255,
@@ -194,7 +194,7 @@ flags.DEFINE_string(
           ' CPU or TPU, channels_last should be used. For GPU, channels_first'
           ' will improve performance.'))
 flags.DEFINE_integer(
-    'num_label_classes', default=1000, help='Number of classes, at least 2')
+    'num_label_classes', default=2, help='Number of classes, at least 2')
 
 flags.DEFINE_float(
     'batch_norm_momentum',
