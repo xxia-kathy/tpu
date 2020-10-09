@@ -119,10 +119,12 @@ def _get_image_data(filename, coder):
     height: integer, image height in pixels.
     width: integer, image width in pixels.
   """
+  print("test")
+
   # Read the image file.
   with tf.gfile.FastGFile(filename, 'r') as ifp:
     image_data = ifp.read()
-
+  print("1")
   # Decode the RGB JPEG.
   image = coder.decode_jpeg(image_data)
   print(image)
