@@ -122,15 +122,12 @@ def _get_image_data(filename, coder):
     height: integer, image height in pixels.
     width: integer, image width in pixels.
   """
-  print("test")
 
   # Read the image file.
   with tf.gfile.FastGFile(filename, 'rb') as ifp:
     image_data = ifp.read()
-  print("1")
   # Decode the RGB JPEG.
   image = coder.decode_jpeg(image_data)
-  print(image)
 
   # Check that image converted to RGB
   assert len(image.shape) == 3
@@ -155,7 +152,6 @@ def convert_to_example(csvline, categories):
   if label in categories:
     # ignore labels not in categories list
     coder = ImageCoder()
-    print("!")
     image_buffer, height, width = _get_image_data(filename, coder)
     del coder
     example = _convert_to_example(filename, image_buffer,
