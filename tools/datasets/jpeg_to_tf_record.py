@@ -125,6 +125,7 @@ def _get_image_data(filename, coder):
 
   # Decode the RGB JPEG.
   image = coder.decode_jpeg(image_data)
+  print(image)
 
   # Check that image converted to RGB
   assert len(image.shape) == 3
@@ -144,7 +145,8 @@ def convert_to_example(csvline, categories):
   Yields:
     serialized TF example if the label is in categories
   """
-  filename, label = csvline.encode('ascii', 'ignore').split(',')
+  filename, label = csvline.split(',')
+  print(filename)
   if label in categories:
     # ignore labels not in categories list
     coder = ImageCoder()
