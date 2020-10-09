@@ -38,6 +38,9 @@ import sys
 import apache_beam as beam
 import tensorflow.compat.v1 as tf
 
+tf.disable_eager_execution()
+
+
 
 def _int64_feature(value):
   """Wrapper for inserting int64 features into Example proto."""
