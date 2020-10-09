@@ -125,7 +125,7 @@ def _get_image_data(filename, coder):
   print("test")
 
   # Read the image file.
-  with tf.gfile.FastGFile(filename, 'r') as ifp:
+  with tf.gfile.FastGFile(filename, 'rb') as ifp:
     image_data = ifp.read()
   print("1")
   # Decode the RGB JPEG.
