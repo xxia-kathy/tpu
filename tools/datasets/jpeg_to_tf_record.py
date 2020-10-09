@@ -83,7 +83,7 @@ def _convert_to_example(filename, image_buffer, label_int, label_str, height,
                                                   1),  # model expects 1-based
               'image/class/synset': _bytes_feature(label_str.encode('utf-8')),
               'image/format': _bytes_feature(image_format),
-              'image/filename': _bytes_feature(os.path.basename(filename)),
+              'image/filename': _bytes_feature(os.path.basename(filename).encode('utf-8')),
               'image/encoded': _bytes_feature(image_buffer)
           }))
   return example
