@@ -68,9 +68,9 @@ def _convert_to_example(filename, image_buffer, label_int, label_str, height,
   Returns:
     Example proto
   """
-  colorspace = 'RGB'
+  colorspace = b'RGB'
   channels = 3
-  image_format = 'JPEG'
+  image_format = b'JPEG'
 
   example = tf.train.Example(
       features=tf.train.Features(
