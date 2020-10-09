@@ -148,7 +148,6 @@ def convert_to_example(csvline, categories):
     serialized TF example if the label is in categories
   """
   filename, label = csvline.split(',')
-  print(categories)
   if label in categories:
     # ignore labels not in categories list
     coder = ImageCoder()
