@@ -38,7 +38,7 @@ TFRecords with this format.
 import abc
 import os
 import six
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 import tensorflow_datasets.public_api as tfds
 
 import image_utils as image

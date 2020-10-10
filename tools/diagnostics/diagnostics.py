@@ -24,7 +24,7 @@ from tensorflow.contrib import tpu as contrib_tpu
 
 # pylint: disable=g-import-not-at-top
 try:
-  import tensorflow._api.v2.compat.v1 as tf
+  import tensorflow.compat.v1 as tf
   TF_VERSION = tf.__version__
 except ImportError:
   logging.error('Failed to import tensorflow')

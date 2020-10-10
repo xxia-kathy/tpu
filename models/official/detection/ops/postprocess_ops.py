@@ -21,7 +21,7 @@ from __future__ import print_function
 
 import functools
 from six.moves import range
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 from ops import nms
 from utils import box_utils

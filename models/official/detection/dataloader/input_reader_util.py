@@ -15,7 +15,7 @@
 # ==============================================================================
 """Utility function for input reader."""
 
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 from ops import spatial_transform_ops
 

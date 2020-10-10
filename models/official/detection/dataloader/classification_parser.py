@@ -14,7 +14,7 @@
 # ==============================================================================
 """Data parser and processing for segmentation datasets."""
 
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 from dataloader import mode_keys as ModeKeys
 from utils import input_utils

@@ -18,7 +18,7 @@
 A decoder to decode string tensors containing serialized tensorflow.Example
 protos for Attribute-Mask R-CNN model.
 """
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 
 def _get_source_id_from_encoded_image(parsed_tensors):

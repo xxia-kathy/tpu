@@ -26,7 +26,7 @@ from __future__ import division
 from __future__ import print_function
 
 import functools
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 MOVING_AVERAGE_DECAY = 0.9
 EPSILON = 1e-5

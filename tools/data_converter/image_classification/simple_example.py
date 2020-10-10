@@ -54,7 +54,7 @@ from absl import logging
 import numpy as np
 from PIL import Image
 import six
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 import tensorflow_datasets.public_api as tfds
 
 from image_classification.image_classification_data import ImageClassificationBuilder

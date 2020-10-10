@@ -34,7 +34,7 @@ from absl import logging
 import numpy as np
 from PIL import Image
 from pycocotools import mask as mask_api
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 from dataloader import mode_keys
 from projects.fashionpedia.configs import factory as config_factory

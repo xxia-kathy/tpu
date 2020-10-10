@@ -25,7 +25,7 @@ import os
 import re
 import six
 from six.moves import zip
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 import tensorflow.compat.v2 as tf2
 
 from dataloader import mode_keys
