@@ -119,23 +119,23 @@ flags.DEFINE_integer(
           ' should be adjusted according to the --train_batch_size flag.'))
 
 flags.DEFINE_integer(
-    'input_image_size', default=256,
+    'input_image_size', default=224,
     help=('Input image size: it depends on specific model name.'))
 
 flags.DEFINE_integer(
-    'train_batch_size', default=256, help='Batch size for training.')
+    'train_batch_size', default=10, help='Batch size for training.')
 
 flags.DEFINE_integer(
-    'eval_batch_size', default=8, help='Batch size for evaluation.')
+    'eval_batch_size', default=2, help='Batch size for evaluation.')
 
 flags.DEFINE_integer(
-    'num_train_images', default=11131, help='Size of training data set.')
+    'num_train_images', default=112, help='Size of training data set.')
 
 flags.DEFINE_integer(
-    'num_eval_images', default=1391, help='Size of evaluation data set.')
+    'num_eval_images', default=14, help='Size of evaluation data set.')
 
 flags.DEFINE_integer(
-    'steps_per_eval', default=2000,
+    'steps_per_eval', default=100,
     help=('Controls how often evaluation is performed. Since evaluation is'
           ' fairly expensive, it is advised to evaluate as infrequently as'
           ' possible (i.e. up to --train_steps, which evaluates the model only'
@@ -155,7 +155,7 @@ flags.DEFINE_bool(
           ' keep up with the TPU-side computation.'))
 
 flags.DEFINE_integer(
-    'iterations_per_loop', default=200,
+    'iterations_per_loop', default=20,
     help=('Number of steps to run on TPU before outfeeding metrics to the CPU.'
           ' If the number of iterations in the loop would exceed the number of'
           ' train steps, the loop will exit before reaching'
