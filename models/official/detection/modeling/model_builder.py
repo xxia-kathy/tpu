@@ -14,7 +14,7 @@
 # ==============================================================================
 """Model builder for detection model."""
 
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from modeling import factory
 

@@ -29,7 +29,7 @@ import functools
 from absl import logging
 from six.moves import range
 from six.moves import zip
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from modeling.architecture import nn_blocks
 from modeling.architecture import nn_ops

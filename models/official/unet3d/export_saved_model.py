@@ -24,7 +24,7 @@ from __future__ import print_function
 
 import functools
 from absl import flags
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from hyperparameters import params_dict
 import unet_config

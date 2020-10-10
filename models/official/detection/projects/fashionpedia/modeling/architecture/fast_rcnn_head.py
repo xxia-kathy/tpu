@@ -23,7 +23,7 @@ import functools
 
 import numpy as np
 from six.moves import range
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from modeling.architecture import nn_ops
 

@@ -21,7 +21,7 @@ import re
 import string
 # Standard Imports
 import numpy as np
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 from tensorflow.contrib import data as contrib_data
 from tensorflow.contrib import lookup as contrib_lookup
 

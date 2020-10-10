@@ -27,7 +27,7 @@ import collections
 import numpy as np
 import six
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 import mnas_utils
 

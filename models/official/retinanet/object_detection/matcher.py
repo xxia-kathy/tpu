@@ -34,7 +34,7 @@ to query the results.
 from abc import ABCMeta
 from abc import abstractmethod
 
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 
 class Match(object):

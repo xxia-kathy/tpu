@@ -22,7 +22,7 @@ import os
 
 # Standard Imports
 from absl import app
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 import configuration
 import show_and_tell_model

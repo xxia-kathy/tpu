@@ -21,7 +21,7 @@ from __future__ import print_function
 
 import six
 
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from dataloader import anchor
 from dataloader import mode_keys

@@ -22,7 +22,7 @@ from __future__ import print_function
 import math
 import numpy as np
 from six.moves import range
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from utils import box_utils
 from utils.object_detection import preprocessor

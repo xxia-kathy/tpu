@@ -24,7 +24,7 @@ from __future__ import print_function
 from absl import app
 from absl import flags
 import absl.logging as _logging  # pylint: disable=unused-import
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from hyperparameters import common_hparams_flags
 from hyperparameters import common_tpu_flags

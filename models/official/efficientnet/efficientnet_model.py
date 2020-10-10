@@ -31,7 +31,7 @@ from absl import logging
 import numpy as np
 import six
 from six.moves import xrange
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 import utils
 from condconv import condconv_layers
