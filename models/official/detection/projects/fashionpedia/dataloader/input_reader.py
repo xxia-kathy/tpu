@@ -15,7 +15,7 @@
 # ==============================================================================
 """Data loader and input processing."""
 
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from dataloader import input_reader_util
 from dataloader import mode_keys as ModeKeys

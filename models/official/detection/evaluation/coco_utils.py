@@ -30,7 +30,7 @@ from pycocotools import mask as mask_api
 import six
 from six.moves import range
 from six.moves import zip
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from dataloader import tf_example_decoder
 from utils import box_utils

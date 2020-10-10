@@ -29,7 +29,7 @@ from PIL import Image
 import queue as Queue
 from ratelimiter import RateLimiter
 import requests
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from tensorflow_serving.apis import predict_pb2
 from tensorflow_serving.apis import prediction_service_pb2_grpc

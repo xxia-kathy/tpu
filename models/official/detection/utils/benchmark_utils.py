@@ -21,7 +21,7 @@ from __future__ import print_function
 import json
 from absl import logging
 import numpy as np
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 
 def compute_model_statistics(batch_size, json_file_path=None):

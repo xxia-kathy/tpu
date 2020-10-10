@@ -20,7 +20,7 @@ from __future__ import print_function
 
 import numpy as np
 import six
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 import coco_metric
 

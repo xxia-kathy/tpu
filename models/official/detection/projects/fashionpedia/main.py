@@ -27,7 +27,7 @@ from absl import logging
 
 import six
 from six.moves import range
-import tensorflow.compat.v1 as tf
+import tensorflow._api.v2.compat.v1 as tf
 
 from dataloader import mode_keys as ModeKeys
 from executor import tpu_executor
