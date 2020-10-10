@@ -25,7 +25,7 @@ from absl import flags
 from absl import logging
 import numpy as np
 # import tensorflow.compat.v1 as tf
-import tensorflow.compat.v2 as tf2  # used for summaries only.
+import tensorflow._api.v2.compat.v2 as tf2  # used for summaries only.
 import tensorflow._api.v2.compat.v1 as tf
 
 import imagenet_input
