@@ -22,7 +22,7 @@ import os
 from typing import Any, Generator, Iterable, Mapping, MutableMapping, Optional, Set, Tuple
 
 import six
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 import tensorflow_datasets.public_api as tfds
 
 import image_utils

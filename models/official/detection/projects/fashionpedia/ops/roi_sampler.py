@@ -20,7 +20,7 @@ from __future__ import division
 from __future__ import print_function
 
 from six.moves import range
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 from utils import box_utils
 from utils.object_detection import balanced_positive_negative_sampler

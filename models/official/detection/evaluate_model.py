@@ -31,7 +31,7 @@ import functools
 from absl import flags
 from absl import logging
 
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 from configs import factory as config_factory
 from dataloader import mode_keys

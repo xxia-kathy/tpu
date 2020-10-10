@@ -39,7 +39,7 @@ import numpy as np
 from pycocotools import cocoeval
 import six
 from six.moves import range
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 from evaluation import coco_utils
 from utils import class_utils

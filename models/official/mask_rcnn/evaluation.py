@@ -23,7 +23,7 @@ from absl import logging
 import numpy as np
 from PIL import Image
 import six
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 import coco_metric
 import coco_utils

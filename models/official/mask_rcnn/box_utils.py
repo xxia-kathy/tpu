@@ -21,7 +21,7 @@ from __future__ import print_function
 # Standard Imports
 
 import numpy as np
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 
 BBOX_XFORM_CLIP = np.log(1000. / 16.)

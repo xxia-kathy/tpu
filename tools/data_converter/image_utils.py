@@ -21,7 +21,7 @@ from __future__ import print_function
 import io
 from absl import logging
 import numpy as np
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 import tensorflow_datasets.public_api as tfds
 
 

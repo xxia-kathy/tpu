@@ -22,7 +22,7 @@ import collections
 import copy
 import re
 import six
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 import yaml
 
 # regex pattern that matches on key-value pairs in a comma-separated

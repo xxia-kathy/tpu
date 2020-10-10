@@ -22,7 +22,7 @@ import functools
 import os
 
 from absl import logging
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 import efficientnet_builder
 import efficientnet_model

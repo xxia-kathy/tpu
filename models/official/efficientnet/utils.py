@@ -24,7 +24,7 @@ import sys
 
 from absl import logging
 import numpy as np
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 from tensorflow.python.tpu import tpu_function  # pylint:disable=g-direct-tensorflow-import
 

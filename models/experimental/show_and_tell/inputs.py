@@ -20,7 +20,7 @@ from __future__ import division
 from __future__ import print_function
 
 # Standard Imports
-import tensorflow._api.v2.compat.v1 as tf
+import tensorflow.compat.v1 as tf
 
 
 def parse_example(serialized, image_feature, caption_feature):
