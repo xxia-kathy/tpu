@@ -123,16 +123,16 @@ flags.DEFINE_integer(
     help=('Input image size: it depends on specific model name.'))
 
 flags.DEFINE_integer(
-    'train_batch_size', default=10, help='Batch size for training.')
+    'train_batch_size', default=128, help='Batch size for training.')
 
 flags.DEFINE_integer(
-    'eval_batch_size', default=2, help='Batch size for evaluation.')
+    'eval_batch_size', default=32, help='Batch size for evaluation.')
 
 flags.DEFINE_integer(
-    'num_train_images', default=112, help='Size of training data set.')
+    'num_train_images', default=11131, help='Size of training data set.')
 
 flags.DEFINE_integer(
-    'num_eval_images', default=14, help='Size of evaluation data set.')
+    'num_eval_images', default=1391, help='Size of evaluation data set.')
 
 flags.DEFINE_integer(
     'steps_per_eval', default=50,
