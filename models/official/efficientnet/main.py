@@ -113,7 +113,7 @@ flags.DEFINE_integer(
 
 
 flags.DEFINE_integer(
-    'train_steps', default=200,
+    'train_steps', default=3000,
     help=('The number of steps to use for training. Default is 218949 steps'
           ' which is approximately 350 epochs at batch size 2048. This flag'
           ' should be adjusted according to the --train_batch_size flag.'))
@@ -135,7 +135,7 @@ flags.DEFINE_integer(
     'num_eval_images', default=1391, help='Size of evaluation data set.')
 
 flags.DEFINE_integer(
-    'steps_per_eval', default=50,
+    'steps_per_eval', default=200,
     help=('Controls how often evaluation is performed. Since evaluation is'
           ' fairly expensive, it is advised to evaluate as infrequently as'
           ' possible (i.e. up to --train_steps, which evaluates the model only'
@@ -155,7 +155,7 @@ flags.DEFINE_bool(
           ' keep up with the TPU-side computation.'))
 
 flags.DEFINE_integer(
-    'iterations_per_loop', default=200,
+    'iterations_per_loop', default=500,
     help=('Number of steps to run on TPU before outfeeding metrics to the CPU.'
           ' If the number of iterations in the loop would exceed the number of'
           ' train steps, the loop will exit before reaching'

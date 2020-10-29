@@ -1,0 +1,11 @@
+--2020-10-09 20:02:55--  https://www.google.com/url?sa=i
+Resolving www.google.com (www.google.com)... 2a00:1450:400a:803::2004, 172.217.168.68
+Connecting to www.google.com (www.google.com)|2a00:1450:400a:803::2004|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘url?sa=i’
+
+url?sa=i                                              [<=>                                                                                                         ]       0  --.-KB/s               url?sa=i                                              [ <=>                                                                                                        ]   1.42K  --.-KB/s    in 0s      
+
+2020-10-09 20:02:55 (20.4 MB/s) - ‘url?sa=i’ saved [1459]
+
